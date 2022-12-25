@@ -1,0 +1,19 @@
+<h2> Line Chart </h2>
+
+<apx-chart
+  [series]="series"
+  [chart]="chart"
+  [dataLabels]="dataLabels"
+  [markers]="markers"
+  [title]="title"
+  [fill]="fill"
+  [yaxis]="yaxis"
+  [xaxis]="xaxis"
+  [tooltip]="tooltip"
+  [autoUpdateSeries]="true"
+></apx-chart>
+<div class="row">
+  <div class="col-md-3 text-right">
+      <button class="btn btn-success btn-block" (click)="downloadPDF()">Export as Image PDF</button>
+  </div>
+</div>

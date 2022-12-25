@@ -1,0 +1,15 @@
+<h2> Donut Chart</h2>
+
+<div id="chart">
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [labels]="chartOptions.labels"
+    [responsive]="chartOptions.responsive"
+  ></apx-chart>
+</div>
+<div class="row">
+  <div class="col-md-3 text-right">
+      <button class="btn btn-success btn-block" (click)="downloadPDF()">Export as PDF</button>
+  </div>
+</div>
